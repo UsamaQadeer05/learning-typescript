@@ -131,19 +131,34 @@
 // }
 
 
-let fruits: string[] = ["Apple", "Mango", "Orange", "Mango", "Kiwi", "Mango", "Banana"];
-let index = 0;
+// let fruits: string[] = ["Apple", "Mango", "Orange", "Mango", "Kiwi", "Mango", "Banana"];
+// let index = 0;
 
-let mangoCount = 0;
+// let mangoCount = 0;
 
-while (mangoCount < 2) {
-    console.log(`You have purchased ${fruits[index]}`);
+// while (mangoCount < 2) {
+//     console.log(`You have purchased ${fruits[index]}`);
 
-    if (fruits[index] == "Mango") {
-        mangoCount++;
-    }
-    index++;
-}
+//     if (fruits[index] == "Mango") {
+//         mangoCount++;
+//     }
+//     index++;
+// }
 
 // 8. Push to an array, even if condition evaluates to true: // do While loop
 
+
+
+
+let numbers: number[] = [1, 2, 4, 0, 9, 11, 31, 16, 18, 42, 24, 28, 3];
+let maxNumber: number = 0;
+
+for (let index = 0; index < numbers.length; index++) {
+    console.log(`Index ${index}`);
+    
+    const element = numbers[index];
+    if (element > maxNumber) {
+        maxNumber = element;
+    }
+}
+console.log(`Maximum number is ${maxNumber}`);
